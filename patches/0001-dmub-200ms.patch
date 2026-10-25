@@ -1,0 +1,18 @@
+--- a/drivers/gpu/drm/amd/display/dc/dc_dmub_srv.c
++++ b/drivers/gpu/drm/amd/display/dc/dc_dmub_srv.c
+@@ -41,7 +41,7 @@
+ #define DC_LOGGER CTX->logger
+ #define GPINT_RETRY_NUM 20
+ 
+-#define MAX_WAIT_US 100000
++#define MAX_WAIT_US 200000
+ 
+ static void dc_dmub_srv_construct(struct dc_dmub_srv *dc_srv, struct dc *dc,
+ 				  struct dmub_srv *dmub)
+--- a/drivers/gpu/drm/amd/amdgpu/amdgpu_drv.c
++++ b/drivers/gpu/drm/amd/amdgpu/amdgpu_drv.c
+@@ -3236,3 +3236,4 @@
+ MODULE_AUTHOR(DRIVER_AUTHOR);
+ MODULE_DESCRIPTION(DRIVER_DESC);
+ MODULE_LICENSE("GPL and additional rights");
++MODULE_VERSION("7.2.11.1");

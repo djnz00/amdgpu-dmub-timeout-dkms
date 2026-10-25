@@ -1,0 +1,8 @@
+/drivers/
+/include/
+/.source-stamp
+/.source.*/
+*.ko
+*.ko.zst
+*.o
+*.cmd
